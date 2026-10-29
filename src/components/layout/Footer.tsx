@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { Container } from "@/components/ui/Container";
+import { Container } from "@/src/components/ui/Container";
 
 const columns = [
   {

@@ -1,4 +1,4 @@
-import type { Author } from "@/types";
+import type { Author } from "@/src/types";
 
 // Mock anonymous identities. Posts reference these, and the landing-page
 // composer cycles through them to preview "pick an avatar".

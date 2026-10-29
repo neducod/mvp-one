@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { RefreshCw } from "lucide-react";
-import { Avatar } from "@/components/ui/Avatar";
-import { Button } from "@/components/ui/Button";
-import { identities } from "@/data/identities";
+import { Avatar } from "@/src/components/ui/Avatar";
+import { Button } from "@/src/components/ui/Button";
+import { identities } from "@/src/data/indentities";
 
 const MAX = 500;
 

@@ -1,5 +1,5 @@
 import { Heart, Lock, PenLine, UserRound } from "lucide-react";
-import { Container } from "@/components/ui/Container";
+import { Container } from "@/src/components/ui/Container";
 
 // These really are a sequence, so they read as steps joined by a line.
 const steps = [

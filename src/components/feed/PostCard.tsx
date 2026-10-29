@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { Heart, MessageCircle } from "lucide-react";
-import { Avatar } from "@/components/ui/Avatar";
-import { Badge } from "@/components/ui/Badge";
-import { cn } from "@/lib/cn";
-import type { Post } from "@/types";
+import { Avatar } from "@/src/components/ui/Avatar";
+import { Badge } from "@/src/components/ui/Badge";
+import { cn } from "@/src/lib/cn";
+import type { Post } from "@/src/types"; 
 
 export function PostCard({ post }: { post: Post }) {
   // Demo only: the like lives in this component's memory and resets on refresh.

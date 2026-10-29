@@ -1,6 +1,6 @@
 import { BookOpenCheck, Flag, HeartHandshake } from "lucide-react";
-import { Button } from "@/components/ui/Button";
-import { Container } from "@/components/ui/Container";
+import { Button } from "@/src/components/ui/Button";
+import { Container } from "@/src/components/ui/Container";
 
 const principles = [
   {
