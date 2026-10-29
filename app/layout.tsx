@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Figtree } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
+// import { Navbar } from "@/components/layout/Navbar";
+import { Navbar } from "@/src/components/layout/Navabar";
+import { Footer } from "@/src/components/layout/Footer";
 
 // next/font self-hosts these fonts and exposes them as CSS variables,
 // which globals.css maps to the `font-sans` and `font-display` utilities.
