@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/*
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,4 +24,80 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+
+@import "tailwindcss";
+
+/* ---------- Design tokens ----------
+   Everything visual (colours, radius, shadow) lives here, so restyling Vapp
+   means editing this one block. Tailwind turns each token into utilities:
+   --color-lavender-600 -> bg-lavender-600, text-lavender-600, etc. */
+@theme {
+  --color-paper: #fdfbf8; /* warm white page background */
+  --color-ink: #2b2542; /* main text: a deep plum, softer than black */
+  --color-ink-soft: #5f5978; /* secondary text */
+  --color-ink-faint: #6f6987; /* tertiary text (still passes AA on white) */
+  --color-line: #e9e4f3; /* subtle borders */
+
+  --color-lavender-50: #f6f3fe;
+  --color-lavender-100: #ece6fd;
+  --color-lavender-200: #dcd2fa;
+  --color-lavender-300: #c4b5f4;
+  --color-lavender-400: #a892ec;
+  --color-lavender-500: #8b6fe0;
+  --color-lavender-600: #7352cc; /* primary action colour */
+  --color-lavender-700: #5c3fad;
+  --color-lavender-800: #46308a;
+
+  --color-blush: #fbe4ea; /* liked state, warm counterpoint to lavender */
+  --color-heart: #cc3d66;
+
+  --radius-card: 1.5rem;
+  --shadow-float: 0 2px 4px rgb(80 50 160 / 0.04), 0 24px 48px -24px rgb(80 50 160 / 0.28);
+}
+
+/* Fonts come from next/font in layout.tsx as CSS variables. `inline` makes the
+   utilities read those variables directly. */
+@theme inline {
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ---------- Base styles ---------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* so #anchors aren't hidden under the sticky navbar */
+}
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+}
+
+::selection {
+  @apply bg-lavender-200;
+}
+
+/* Visible keyboard focus everywhere, without showing on mouse clicks. */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-lavender-500;
+}
+
+/* Heart "pop" used when a post is liked. */
+@keyframes heart-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+.animate-pop {
+  animation: heart-pop 320ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
