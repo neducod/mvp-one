@@ -1,4 +1,4 @@
-import { cn } from "@/lib/cn";
+import { cn } from "@/src/lib/cn";
 
 export function Badge({ className, children }: { className?: string; children: React.ReactNode }) {
   return (

@@ -1,5 +1,5 @@
-import type { Post } from "@/types";
-import { identities } from "./identities";
+import type { Post } from "@/src/types";
+import { identities } from "./indentities";
 
 // Mock posts. Later, replace this import with a Supabase query that returns
 // the same `Post[]` shape. The UI components won't need to change.

@@ -1,5 +1,5 @@
-import { cn } from "@/lib/cn";
-import type { AvatarConfig } from "@/types";
+import { cn } from "@/src/lib/cn";
+import type { AvatarConfig } from "@/src/types";
 
 // Anime-inspired avatars drawn as inline SVG, so there are no image files to
 // manage and every avatar is just data (an AvatarConfig). In the real app you

@@ -5,9 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
-import { Button } from "@/components/ui/Button";
-import { Container } from "@/components/ui/Container";
-import { cn } from "@/lib/cn";
+import { Button } from "@/src/components/ui/Button";
+import { Container } from "@/src/components/ui/Container";
+import { cn } from "@/src/lib/cn";
 
 const links = [
   { href: "/feed", label: "Feed" },

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/cn";
+import { cn } from "@/src/lib/cn";
 
 // One consistent page width and side padding for every section.
 export function Container({

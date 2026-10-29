@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { cn } from "@/lib/cn";
+import { cn } from "@/src/lib/cn";
 
 type Variant = "primary" | "secondary" | "ghost" | "light";
 type Size = "sm" | "md" | "lg";
