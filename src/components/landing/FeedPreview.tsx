@@ -1,7 +1,7 @@
-import { PostCard } from "../feed/Postcard";
+// import { PostCard } from "../feed/Postcard";
+import { PostCard } from "@/src/components/feed/Postcard"
 import { Button } from "@/src/components/ui/Button";
 import { Container } from "@/src/components/ui/Container";
-// import { Post } from "@/src/types";
 import { posts } from "@/src/data/posts"
 
 export function FeedPreview() {
